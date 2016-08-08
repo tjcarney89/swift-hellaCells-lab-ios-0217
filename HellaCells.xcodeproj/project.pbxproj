@@ -12,6 +12,7 @@
 		1B95508F1D59398500BBAE20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B95508D1D59398500BBAE20 /* Main.storyboard */; };
 		1B9550911D59398500BBAE20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9550901D59398500BBAE20 /* Assets.xcassets */; };
 		1B9550941D59398500BBAE20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9550921D59398500BBAE20 /* LaunchScreen.storyboard */; };
+		4220CBDDF3C047716025EE76 /* Pods_HellaCells.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83F10E0A27FE8FAEECADE09 /* Pods_HellaCells.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		1B9550901D59398500BBAE20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B9550931D59398500BBAE20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B9550951D59398500BBAE20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A83F10E0A27FE8FAEECADE09 /* Pods_HellaCells.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HellaCells.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD93961B37099B0D9B6E139 /* Pods-HellaCells.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HellaCells.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HellaCells/Pods-HellaCells.debug.xcconfig"; sourceTree = "<group>"; };
+		D8FF1D92199F9B1D50805C06 /* Pods-HellaCells.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HellaCells.release.xcconfig"; path = "Pods/Target Support Files/Pods-HellaCells/Pods-HellaCells.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4220CBDDF3C047716025EE76 /* Pods_HellaCells.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				1B9550881D59398500BBAE20 /* HellaCells */,
 				1B9550871D59398500BBAE20 /* Products */,
+				A67EA1BCABC18EFDC01A732B /* Pods */,
+				B3BAD7EEA1B5B5DEC49BA3CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = HellaCells;
 			sourceTree = "<group>";
 		};
+		A67EA1BCABC18EFDC01A732B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABD93961B37099B0D9B6E139 /* Pods-HellaCells.debug.xcconfig */,
+				D8FF1D92199F9B1D50805C06 /* Pods-HellaCells.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3BAD7EEA1B5B5DEC49BA3CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A83F10E0A27FE8FAEECADE09 /* Pods_HellaCells.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B9550981D59398500BBAE20 /* Build configuration list for PBXNativeTarget "HellaCells" */;
 			buildPhases = (
+				D4FD53A0EA4A46D96E9B38F1 /* 📦 Check Pods Manifest.lock */,
 				1B9550821D59398500BBAE20 /* Sources */,
 				1B9550831D59398500BBAE20 /* Frameworks */,
 				1B9550841D59398500BBAE20 /* Resources */,
+				CCB9009B08B1F7C230D6DBE8 /* 📦 Embed Pods Frameworks */,
+				AE8C145C6617763FF6A16358 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE8C145C6617763FF6A16358 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HellaCells/Pods-HellaCells-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCB9009B08B1F7C230D6DBE8 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HellaCells/Pods-HellaCells-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4FD53A0EA4A46D96E9B38F1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B9550821D59398500BBAE20 /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		1B9550991D59398500BBAE20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABD93961B37099B0D9B6E139 /* Pods-HellaCells.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HellaCells/Info.plist;
@@ -258,6 +334,7 @@
 		};
 		1B95509A1D59398500BBAE20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8FF1D92199F9B1D50805C06 /* Pods-HellaCells.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HellaCells/Info.plist;
@@ -286,6 +363,7 @@
 				1B95509A1D59398500BBAE20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
